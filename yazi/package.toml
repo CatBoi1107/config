@@ -1,0 +1,29 @@
+[[plugin.deps]]
+use = "KKV9/compress"
+rev = "46a6b9f"
+hash = "771af2becc575a3f43d0542de823969d"
+
+[[plugin.deps]]
+use = "yazi-rs/flavors:claude-inspired"
+rev = "9511cb0"
+hash = "99aa06d3014798d86001c324468d497f"
+
+[[plugin.deps]]
+use = "yazi-rs/flavors:ashen"
+rev = "9511cb0"
+hash = "99aa06d3014798d86001c324468d497f"
+
+[[flavor.deps]]
+use = "yazi-rs/flavors:catppuccin-mocha"
+rev = "9511cb0"
+hash = "7dfe41c9c3d9be76da8a844263d0bbed"
+
+[[flavor.deps]]
+use = "ficd0/ashen:ashen"
+rev = "7d18c13"
+hash = "65b56e9ee65dd33eec62d6ca4209611b"
+
+[[flavor.deps]]
+use = "rapidrabbit76/claude-inspired"
+rev = "6646a90"
+hash = "880312879b18b91e4a356f6a359e108a"

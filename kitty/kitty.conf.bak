@@ -1,0 +1,11 @@
+background_opacity	0.6
+font_family		Iosevka Term Bold Extended
+font_size		12
+window_margin_width	15
+enable_audio_bell	false
+
+
+# BEGIN_KITTY_THEME
+# Catppuccin-Frappe
+include current-theme.conf
+# END_KITTY_THEME
