@@ -13,6 +13,11 @@ use = "yazi-rs/flavors:ashen"
 rev = "9511cb0"
 hash = "99aa06d3014798d86001c324468d497f"
 
+[[plugin.deps]]
+use = "pirafrank/what-size"
+rev = "179ebf6"
+hash = "57056b9728006881d580ccabe8154a9c"
+
 [[flavor.deps]]
 use = "yazi-rs/flavors:catppuccin-mocha"
 rev = "9511cb0"
