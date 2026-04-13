@@ -27,3 +27,8 @@ desc = "Archive selected files (password+header+level)"
 on = [ ">" ]
 run  = "plugin what-size"
 desc = "Calc size of selection or cwd" 
+
+[[mgr.prepend_keymap]]
+on   = [ "<C-t>" ]
+run  = 'shell "kitty --detach" --confirm'
+desc = "Open Kitty terminal here"
