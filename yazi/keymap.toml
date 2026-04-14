@@ -32,3 +32,17 @@ desc = "Calc size of selection or cwd"
 on   = [ "<C-t>" ]
 run  = 'shell "kitty --detach" --confirm'
 desc = "Open Kitty terminal here"
+
+[[mgr.prepend_keymap]]
+on = "<C-y>"
+run = ["plugin wl-clipboard"]
+
+[[mgr.prepend_keymap]]
+on   = [ "<C-s>" ]
+run  = "plugin kdeconnect-send"
+desc = "Send selected files via KDE Connect"
+
+[[manager.prepend_keymap]]
+on = ["`"]
+desc = "Command palette (fzf)"
+run = "plugin command-palette"

@@ -18,6 +18,36 @@ use = "pirafrank/what-size"
 rev = "179ebf6"
 hash = "57056b9728006881d580ccabe8154a9c"
 
+[[plugin.deps]]
+use = "boydaihungst/mediainfo"
+rev = "49f5ab7"
+hash = "6e3b5e58f985cc2d625e0030dc35b1b2"
+
+[[plugin.deps]]
+use = "grappas/wl-clipboard"
+rev = "8cc5524"
+hash = "5c587834c274dca9059092714ece1f18"
+
+[[plugin.deps]]
+use = "AminurAlam/yazi-plugins:preview-git"
+rev = "a36ff71"
+hash = "52f20cafe2faf4901910ef77da8956e8"
+
+[[plugin.deps]]
+use = "AminurAlam/yazi-plugins:preview-typst"
+rev = "a36ff71"
+hash = "b30c20172c5f7d552342fdc14a11f92a"
+
+[[plugin.deps]]
+use = "Deepak22903/kdeconnect-send"
+rev = "8a6936b"
+hash = "8d43ac149f5cf7b5eea4ce2ebbe8e1ba"
+
+[[plugin.deps]]
+use = "Mr-Ples/command-palette"
+rev = "e5e6105"
+hash = "fee4f11556df389bd37341584c0fbcaf"
+
 [[flavor.deps]]
 use = "yazi-rs/flavors:catppuccin-mocha"
 rev = "9511cb0"
