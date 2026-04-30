@@ -6,8 +6,8 @@
   <property name="pressureMultiplier" value="1"/>
   <property name="zoomGesturesEnabled" value="true"/>
   <property name="selectedToolbar" value="Portrait"/>
-  <property name="lastSavePath" value="/home/h/ThePreservedLexicon/CS/CSUI/Semester2/POK"/>
-  <property name="lastOpenPath" value="/home/h/ThePreservedLexicon/CS/CSUI/Semester2/POK"/>
+  <property name="lastSavePath" value="/home/h/ThePreservedLexicon/CS/CSUI/Semester2/Alin/LK3"/>
+  <property name="lastOpenPath" value="/home/h/ThePreservedLexicon/CS/CSUI/Semester2/Alin/LK3"/>
   <property name="lastImagePath" value=""/>
   <property name="edgePanSpeed" value="20"/>
   <property name="edgePanMaxMult" value="5"/>
@@ -78,7 +78,7 @@
   <property name="drawDirModsRadius" value="50"/>
   <property name="snapRotation" value="true"/>
   <property name="snapRotationTolerance" value="0.3"/>
-  <property name="snapGrid" value="false"/>
+  <property name="snapGrid" value="true"/>
   <property name="snapGridTolerance" value="0.5"/>
   <property name="snapGridSize" value="14.17"/>
   <property name="strokeRecognizerMinSize" value="40"/>
@@ -237,7 +237,7 @@
     <data name="drawRect"/>
     <data name="drawSpline"/>
     <data name="eraser">
-      <attribute name="size" type="string" value="THIN"/>
+      <attribute name="size" type="string" value="BIG"/>
       <attribute name="type" type="string" value="default"/>
     </data>
     <data name="hand"/>
@@ -258,7 +258,7 @@
       <attribute name="size" type="string" value="MEDIUM"/>
     </data>
     <data name="pen">
-      <attribute name="color" type="hex" value="ffcdd6f4"/>
+      <attribute name="color" type="hex" value="ffeba0ac"/>
       <attribute name="drawingType" type="string" value="strokeRecognizer"/>
       <attribute name="fill" type="int" value="0"/>
       <attribute name="fillAlpha" type="int" value="128"/>

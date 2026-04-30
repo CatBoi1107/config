@@ -1,6 +1,6 @@
 #!/bin/sh
 BASENAME=$(date +%y%m%d_%H)
-OUTPUT_DIR=~/ThePreservedLexicon/Images/Screenshots/
+OUTPUT_DIR=~/ThePreservedLexicon/Media/Images/Screenshots/
 TEMP="$OUTPUT_DIR"temp.png
 
 hyprshot -m region -o "$OUTPUT_DIR" -f temp.png --freeze
