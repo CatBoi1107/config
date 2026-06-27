@@ -20,6 +20,7 @@ application/x-extension-xht=zen.desktop
 application/pdf=zen.desktop
 application/x-xopp=xournalpp.desktop
 x-scheme-handler/discord=vesktop.desktop
+x-scheme-handler/excalidraw=excalidraw-desktop-handler.desktop
 
 [Added Associations]
 x-scheme-handler/http=zen.desktop;
