@@ -119,7 +119,7 @@ input {
 // Find more information on the wiki:
 // https://niri-wm.github.io/niri/Configuration:-Layout
 layout {
-	background-color "#000000"
+	// background-color "#000000"
     // Set gaps around windows in logical pixels.
     gaps 16
 
@@ -256,7 +256,7 @@ layout {
         offset x=0 y=5
 
         // You can also change the shadow color and opacity.
-        color "#0007"
+        // color "#0007"
     }
 
     // Struts shrink the area occupied by windows, similarly to layer-shell panels.
@@ -359,18 +359,18 @@ window-rule {
 
 binds {
     Mod+Space       { spawn "~/.config/commands/opentmux.sh"; }
-    Mod+Shift+Space { spawn "kitty"; }
+    Mod+Shift+Space hotkey-overlay-title="Open Kitty Terminal" { spawn "kitty"; }
     Mod+Shift+Q repeat=false { close-window; }
     Mod+Shift+S     hotkey-overlay-title="Screenshot" { spawn "~/.config/commands/screenshot_compressed_wl.sh"; }
-    Mod+Shift+E     { spawn "dolphin"; }
-    Mod+R hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
-    Mod+Period      { spawn "~/.config/commands/openemote.sh"; }
+    Mod+Shift+E     hotkey-overlay-title="Open Dolphin File Manager"{ spawn "dolphin"; }
+    Mod+R 	    hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
+    Mod+Period      hotkey-overlay-title="Open Emoji Picker" { spawn "~/.config/commands/openemote.sh"; }
 
-    Mod+B           { spawn "~/.config/commands/openzen.sh"; }
-    Mod+N           { spawn "~/.config/commands/openneovim.sh"; }
-    Mod+Shift+N     { spawn "~/.config/commands/openvim.sh"; }
-    Mod+E           { spawn "~/.config/commands/openyazi.sh"; }
-    Mod+Alt+L     { spawn "~/.config/commands/lock.sh"; }
+    Mod+B           hotkey-overlay-title="Open Zen Browser" { spawn "~/.config/commands/openzen.sh"; }
+    Mod+N           hotkey-overlay-title="Open Neovim" { spawn "~/.config/commands/openneovim.sh"; }
+    Mod+Shift+N     hotkey-overlay-title="Open Vim" { spawn "~/.config/commands/openvim.sh"; }
+    Mod+E           hotkey-overlay-title="Open Yazi" { spawn "~/.config/commands/openyazi.sh"; }
+    Mod+Alt+L       { spawn "~/.config/commands/lock.sh"; }
     // Mod+Shift+R     { spawn "~/.config/commands/restartwarp.sh"; }
     Mod+V           { spawn "kitty" "--class" "clipse" "-e" "clipse"; }
     // Keys consist of modifiers separated by + signs, followed by an XKB key name

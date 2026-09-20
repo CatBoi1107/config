@@ -10,6 +10,7 @@ export HISTFILESIZE=-1
 export OLLAMA_NUM_PARALLEL=4
 
 fastfetch
+shopt -s histappend
 
 alias cva='python -m venv .venv'
 alias va='source .venv/bin/activate'
