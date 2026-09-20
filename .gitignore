@@ -25,6 +25,9 @@
 !waybar/
 !waybar/**
 
+!wireplumber/
+!wireplumber/**
+
 !xournalpp/
 !xournalpp/**
 
