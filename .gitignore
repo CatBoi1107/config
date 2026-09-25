@@ -6,6 +6,8 @@
 
 !backup-exclude
 
+!.gnupg
+
 !commands/
 !commands/**
 

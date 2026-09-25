@@ -358,11 +358,6 @@ window-rule {
 }
 
 binds {
-    // >>> jcode launch hotkeys (managed) >>>
-    Super+Semicolon hotkey-overlay-title="jcode: home" { spawn "sh" "-c" "if [ \"$(niri msg -j focused-window 2>/dev/null | jq -r '.app_id // empty' 2>/dev/null)\" = 'jcode-desktop' ]; then exec wtype -M ctrl -M alt -k Return -m alt -m ctrl; fi; if [ -d '/home/ahmad' ]; then cd '/home/ahmad'; else cd \"$HOME\"; fi; exec 'kitty' '/home/ahmad/.jcode/builds/versions/0.86.0/jcode-linux-x86_64.bin' --spawn-hotkey 'cmd+;'"; }
-    Super+Apostrophe hotkey-overlay-title="jcode: last project" { spawn "sh" "-c" "if [ \"$(niri msg -j focused-window 2>/dev/null | jq -r '.app_id // empty' 2>/dev/null)\" = 'jcode-desktop' ]; then exec wtype -M ctrl -k t -m ctrl; fi; if [ -d '/home/ahmad' ]; then cd '/home/ahmad'; else cd \"$HOME\"; fi; exec 'kitty' '/home/ahmad/.jcode/builds/versions/0.86.0/jcode-linux-x86_64.bin' --spawn-hotkey 'cmd+'\\'''"; }
-    Super+Shift+Apostrophe hotkey-overlay-title="jcode: self-dev (self-dev)" { spawn "sh" "-c" "if [ -d '/home/ahmad' ]; then cd '/home/ahmad'; else cd \"$HOME\"; fi; exec 'kitty' '/home/ahmad/.jcode/builds/versions/0.86.0/jcode-linux-x86_64.bin' --spawn-hotkey 'cmd+shift+'\\''' self-dev"; }
-    // <<< jcode launch hotkeys (managed) <<<
     Mod+Space       { spawn "~/.config/commands/opentmux.sh"; }
     Mod+Shift+Space hotkey-overlay-title="Open Kitty Terminal" { spawn "kitty"; }
     Mod+Shift+Q repeat=false { close-window; }
@@ -416,8 +411,8 @@ binds {
     // Example brightness key mappings for brightnessctl.
     // You can use regular spawn with multiple arguments too (to avoid going through "sh"),
     // but you need to manually put each argument in separate "" quotes.
-    XF86MonBrightnessUp allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "+5%"; }
-    XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "5%-"; }
+    XF86MonBrightnessUp allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "+10%"; }
+    XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "10%-"; }
 
     // Open/close the Overview: a zoomed-out view of workspaces and windows.
     // You can also move the mouse into the top-left hot corner,

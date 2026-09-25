@@ -51,9 +51,10 @@ alias sbash='source ~/.bashrc'
 alias s='yay -Ss --color=always'
 alias i='yay --needed --noconfirm -S --color=always'
 alias ui='yay -Rns --color=always'
-alias updatealias='sudo flatpak update --color=always && yay --needed --noconfirm --color=always -Syu'
+alias updatealias='sudo flatpak update && yay --needed --noconfirm --color=always -Syu'
 alias apdet='updatealias && exit'
 alias apdetsh='updatealias && mati'
+alias apdetsl='updatealias && tidur'
 
 alias anime='ani-cli'
 alias ff='fastfetch'
@@ -95,3 +96,6 @@ case ":$PATH:" in
 esac
 # pnpm end
 eval "$(starship init bash)"
+
+# Added by jcode installer
+export PATH="/home/ahmad/.local/bin:$PATH"
