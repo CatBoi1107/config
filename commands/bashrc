@@ -35,6 +35,7 @@ alias cdui='cd ~/ThePreservedLexicon/CS/CSUI/'
 alias cdgs='cd ~/.config/ags/'
 alias cddf='cd ~/ThePreservedLexicon/CS/TheDigitalForge/'
 alias cdcf='cd ~/.config/'
+alias cdbk='cd ~/ThePreservedLexicon/Kalaam/Bacaan/'
 
 alias warpc='warp-cli connect && exit'
 alias warpdc='warp-cli disconnect && exit'

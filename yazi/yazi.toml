@@ -9,4 +9,10 @@ prepend_previewers = [
   { mime = "application/dvb.ait", run = "mediainfo" },
   { mime = "application/vnd.adobe.illustrator", run = "mediainfo" },
   { url = '*.typ', run = 'preview-typst' },
+  { url = '*.pdf', run = 'xdg-open' },
+]
+
+[opener]
+text-editor = [
+        { run = 'nvim "$@"', block = true, orphan = true, desc = "Open Neovim"}
 ]

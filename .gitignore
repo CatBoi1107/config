@@ -2,8 +2,6 @@
 
 !.gitignore
 
-!mimeapps.list
-
 !backup-exclude
 
 !.gnupg

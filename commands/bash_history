@@ -1774,3 +1774,49 @@ touch msg.txt
 echo "Calling import-environment without a list of variable names is deprecated." > msg.txt 
 cat msg.txt 
 apdet
+pwd
+nbash
+ls -al
+apdet
+s mupdf
+s mh pdf
+s mj pdf
+i mupdf
+cdcf
+cd yazi/
+nvim
+nvim
+s mutool
+cdbk
+mupdf 1984.pdf
+s feh
+s mpv
+i feh
+s vlc
+cd ThePreservedLexicon/\!Shortcuts/Kalaam/Bacaan/
+mupdf Pengantar\ KIK.pdf 
+xdg-open Pengantar\ KIK.pdf 
+cd
+cdcf
+ls -al | less
+which xdg-open
+nvim /usr/bin/xdg-
+nvim /usr/bin/xdg-open 
+ls -al | less
+nvim mimeapps.list 
+nbash
+sbash
+cdbk
+mupdf 1984.
+mupdf 1984.pdf
+utool 1984.pdf 
+mutool 1984.pdf 
+s mupdf
+i mupdf-tools
+i mupdf-tools mupdf-gl
+i mupdf-tools
+mutool 1984.pdf 
+mupdf 1984.pdf 
+s paper
+s view pdf
+i papers
