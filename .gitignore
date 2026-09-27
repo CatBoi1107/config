@@ -8,7 +8,7 @@
 
 !commands/
 !commands/**
-
+commands/bash_history
 
 !hypr/
 !hypr/**
