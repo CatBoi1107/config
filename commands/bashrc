@@ -9,6 +9,15 @@ export HISTSIZE=-1
 export HISTFILESIZE=-1
 export OLLAMA_NUM_PARALLEL=4
 
+function yazi() {
+    local tmp cwd
+    tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+    command yazi "$@" --cwd-file="$tmp"
+    IFS= read -r -d '' cwd < "$tmp"
+    [ "$cwd" != "$PWD" ] && [ -d "$cwd" ] && builtin cd -- "$cwd" || builtin true
+    command rm -f -- "$tmp"
+}
+
 fastfetch
 shopt -s histappend
 
@@ -16,6 +25,9 @@ alias cva='python -m venv .venv'
 alias va='source .venv/bin/activate'
 alias dva='deactivate'
 
+
+# Optional: also let single-letter 'y' do the exact same thing
+alias y="yazi"
 # alias ls='ls --color=auto'
 alias ls='eza --color=always'
 alias grep='grep --color=always'

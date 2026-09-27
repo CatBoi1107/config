@@ -1820,3 +1820,62 @@ mupdf 1984.pdf
 s paper
 s view pdf
 i papers
+nvim
+cdcf
+nvim .gitignore 
+nvim .gitignore 
+komit "move mimeapps.list and modify yazi opener"
+nvim .gitignore 
+cdui
+cd Semester3/Sistem_Operasi/
+nvim TK1/resource_check.c
+cdcf
+komit "neovim indenting"
+nvim
+komit "neovim autopairs"
+cdnv
+komit "indenting and autopairs"
+gitaccCB
+gh auth switch
+komit "indenting and autopairs"
+dorong
+nvim
+komit "extra bracket fix"
+dorong
+nvim
+niri-session
+which niri-session
+cat $(which niri-session)
+which niri-session
+cat /usr/bin/niri-session 
+cat /usr/bin/niri-session | less
+nvim /usr/bin/niri-session 
+sudo nvim /usr/bin/niri-session 
+cdnv
+nvim init.lua 
+nvim init.lua 
+;q
+cd
+nvim
+yazi
+yazi
+nvim
+yazi
+yazi;
+yazi
+syncthing
+apdetsh
+syncthing & disown
+sbash
+sbash & clear
+kucingcatneko
+history
+history
+history
+history
+s darktable
+i darktable
+apdet
+yazi
+yazi
+yazi
