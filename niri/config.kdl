@@ -7,6 +7,10 @@ debug {
 	render-drm-device "/dev/dri/by-path/pci-0000:34:00.0-render"
 	ignore-drm-device "/dev/dri/by-path/pci-0000:01:00.0-render"
 }
+
+xwayland-satellite {
+    // niri searches PATH for "xwayland-satellite" by default
+}
 // This config is in the KDL format: https://kdl.dev
 // "/-" comments out the following node.
 // Check the wiki for a full description of the configuration:
@@ -366,7 +370,7 @@ binds {
     Mod+Space       { spawn "~/.config/commands/opentmux.sh"; }
     Mod+Shift+Space hotkey-overlay-title="Open Kitty Terminal" { spawn "kitty"; }
     Mod+Shift+Q repeat=false { close-window; }
-    Mod+Shift+S     hotkey-overlay-title="Screenshot" { spawn "~/.config/commands/screenshot_compressed_wl.sh"; }
+    Mod+Shift+S     hotkey-overlay-title="Screenshot" { spawn "~/.config/commands/screenshot_compressed_niri.sh"; }
     Mod+Shift+E     hotkey-overlay-title="Open Dolphin File Manager"{ spawn "dolphin"; }
     Mod+R 	    hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
     Mod+Period      hotkey-overlay-title="Open Emoji Picker" { spawn "~/.config/commands/openemote.sh"; }
@@ -401,8 +405,8 @@ binds {
     // The allow-when-locked=true property makes them work even when the session is locked.
     // Using spawn-sh allows to pass multiple arguments together with the command.
     // "-l 1.0" limits the volume to 100%.
-    XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+ -l 1.0"; }
-    XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-"; }
+    XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.05+ -l 1.0"; }
+    XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.05-"; }
     XF86AudioMute        allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"; }
     XF86AudioMicMute     allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"; }
 
