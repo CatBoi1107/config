@@ -32,6 +32,7 @@ alias y="yazi"
 alias fd='fd --color=always'
 alias ls='eza --color=always'
 alias grep='grep --color=always'
+alias rg='rg --color=always'
 alias less='less -R'
 
 alias mati='systemctl poweroff'
