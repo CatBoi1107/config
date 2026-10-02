@@ -6,26 +6,23 @@ mkdir -p "$OUTPUT_DIR"
 # Select region with slurp
 GEOM=$(slurp)
 
-# Exit cleanly if selection was cancelled (e.g. user pressed Escape)
+# Exit cleanly if selection was cancelled
 [ -z "$GEOM" ] && exit 0
 
-TEMP=$(mktemp -p "$OUTPUT_DIR" --suffix=.png niri_XXXXXX)
+# Generate a unique filename for the final JPEG
+FILEPATH="$OUTPUT_DIR$BASENAME.jpg"
+COUNT=1
+while [ -f "$FILEPATH" ]; do
+    FILEPATH="$OUTPUT_DIR$BASENAME($COUNT).jpg"
+    COUNT=$((COUNT + 1))
+done
 
-# Capture directly into the temp file synchronously
-grim -g "$GEOM" "$TEMP"
+# --- THE CONVEYOR BELT ---
+# 1. grim captures the screen. The '-' tells it to push raw data down the pipe.
+# 2. ffmpeg catches that raw data (pipe:0), compresses it, and saves it directly to your drive.
+# Because of the pipe, the uncompressed image never touches your hard drive!
+grim -g "$GEOM" - | ffmpeg -y -i pipe:0 -qscale:v 10 "$FILEPATH"
 
-if [ -s "$TEMP" ]; then
-    FILEPATH="$OUTPUT_DIR$BASENAME.jpg"
-    COUNT=1
-    while [ -f "$FILEPATH" ]; do
-        FILEPATH="$OUTPUT_DIR$BASENAME($COUNT).jpg"
-        COUNT=$((COUNT + 1))
-    done
-
-    # Compress to JPEG, clean up the temp PNG, and copy image to clipboard
-    ffmpeg -i "$TEMP" -qscale:v 10 "$FILEPATH" \
-        && rm -f "$TEMP" \
-        && wl-copy --type image/jpeg < "$FILEPATH"
-else
-    rm -f "$TEMP"
-fi
+# Copy the finished JPEG to the clipboard.
+# We use --type image/png to "trick" clipse and Wayland into accepting it!
+wl-copy --type image/png < "$FILEPATH"
