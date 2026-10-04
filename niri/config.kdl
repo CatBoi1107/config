@@ -372,7 +372,7 @@ binds {
     Mod+Shift+Space hotkey-overlay-title="Open Kitty Terminal" { spawn "kitty"; }
     Mod+Shift+Q repeat=false { close-window; }
     Mod+Shift+S     hotkey-overlay-title="Screenshot" { spawn "~/.config/commands/screenshot_compressed_niri.sh"; }
-    Mod+Shift+E     hotkey-overlay-title="Open Dolphin File Manager"{ spawn "dolphin"; }
+    Mod+Shift+E     hotkey-overlay-title="Open Nautilus File Manager"{ spawn "Nautilus"; }
     Mod+R 	    hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
     Mod+Period      hotkey-overlay-title="Open Emoji Picker" { spawn "~/.config/commands/openemote.sh"; }
 
