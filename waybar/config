@@ -4,10 +4,10 @@
   "margin-bottom": -10,
   "spacing" : 0,
   "modules-left": [
-  "hyprland/workspaces",
+  "niri/workspaces",
   "custom/uptime",
   "cpu",
-  "hyprland/window",
+  "niri/window",
   ],
 
   "modules-center": ["clock"],
@@ -21,7 +21,7 @@
     "battery",
   ],
 
-  "hyprland/workspaces": {
+  "niri/workspaces": {
     "format": "{name}: {icon}",
     "format-icons": {
       "active": "",
@@ -56,7 +56,7 @@
   "clock": {
     //"timezone": "Asia/Jakarta",
     "tooltip": false,
-    "format": "{:%H:%M:%S  -  %A, %d-%m-%y}",
+    "format": "{:%H:%M:%S  -  %A, %y-%m-%d}",
     "interval": 1
   },
 
