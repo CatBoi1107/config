@@ -1,18 +1,21 @@
 [plugin]
 prepend_previewers = [
-  { mime = "audio/*", run = "mediainfo" },
-  { mime = "video/*", run = "mediainfo" },
-  { mime = "image/*", run = "mediainfo" },
-  { mime = "application/subrip", run = "mediainfo" },
-  { url = "*.{ai,eps,ait}", run = "mediainfo" },
-  { mime = "application/postscript", run = "mediainfo" },
-  { mime = "application/dvb.ait", run = "mediainfo" },
-  { mime = "application/vnd.adobe.illustrator", run = "mediainfo" },
-  { url = '*.typ', run = 'preview-typst' },
-  { url = '*.pdf', run = 'xdg-open' },
+    { mime = "audio/*", run = "mediainfo" },
+    { mime = "video/*", run = "mediainfo" },
+    { mime = "image/*", run = "mediainfo" },
+    { mime = "application/subrip", run = "mediainfo" },
+    { url = "*.{ai,eps,ait}", run = "mediainfo" },
+    { mime = "application/postscript", run = "mediainfo" },
+    { mime = "application/dvb.ait", run = "mediainfo" },
+    { mime = "application/vnd.adobe.illustrator", run = "mediainfo" },
+    { url = '*.typ', run = 'preview-typst' },
+    { url = '*.pdf', run = 'xdg-open' },
+]
+previewers = [
+    { mime = "application/pdf", run = "pdf" },
 ]
 
 [opener]
 text-editor = [
-        { run = 'nvim "$@"', block = true, orphan = true, desc = "Open Neovim"}
+    { run = 'nvim "$@"', block = true, orphan = true, desc = "Open Neovim"}
 ]
