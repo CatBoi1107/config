@@ -1,0 +1,8 @@
+Where to symlink files
+
+~ (home user, example: ~/.bashrc):
+bashrc as .bashrc
+bash_profile as .bash_profile
+
+~/.config (user config)
+mimeapps.list as mimeapps.list
