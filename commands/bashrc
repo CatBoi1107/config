@@ -19,7 +19,7 @@ function yazi() {
 }
 
 clear
-fastfetch
+yazi
 shopt -s histappend
 
 alias cva='python -m venv .venv'
@@ -91,6 +91,7 @@ alias gitCB='git config --local user.name "CatBoi1107" && git config --local use
 alias gitUI='git config --local user.name "AhmadCSUI" && git config --local user.email "ahmad.shanahan@ui.ac.id"'
 alias gitASZ='git config --local user.name "aszorya" && git config --local user.email "ahmadszorya@gmail.com"'
 alias ghacc='gh auth switch'
+alias lg='lazygit'
 alias komit='git add . && git commit -m'
 
 alias junit='java -cp .:/usr/share/java/junit.jar org.junit.runner.JUnitCore'
