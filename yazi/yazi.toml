@@ -19,3 +19,11 @@ previewers = [
 text-editor = [
     { run = 'nvim "$@"', block = true, orphan = true, desc = "Open Neovim"}
 ]
+browser = [
+    { run = "xdg-open %s", orphan = true, desc = "Open in browser" },
+]
+
+[open]
+prepend_rules = [
+  { url = "*.url", use = "browser" },
+]
