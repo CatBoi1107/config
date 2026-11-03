@@ -8,6 +8,10 @@ debug {
 	ignore-drm-device "/dev/dri/by-path/pci-0000:01:00.0-render"
 }
 
+output "HDMI-A-1" {
+    position x=1920 y=0
+}
+
 xwayland-satellite {
     // niri searches PATH for "xwayland-satellite" by default
 }
