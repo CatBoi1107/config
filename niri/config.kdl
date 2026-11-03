@@ -129,8 +129,14 @@ input {
 layout {
 	// background-color "#000000"
     // Set gaps around windows in logical pixels.
-    gaps 16
+    gaps 0
 
+    struts {
+            left 0
+            right 0
+            top 10    // e.g., to leave room for a status bar like waybar
+            bottom 0
+    }
     // When to center a column when changing focus, options are:
     // - "never", default behavior, focusing an off-screen column will keep at the left
     //   or right edge of the screen.
@@ -272,12 +278,7 @@ layout {
     // Left and right struts will cause the next window to the side to always be visible.
     // Top and bottom struts will simply add outer gaps in addition to the area occupied by
     // layer-shell panels and regular gaps.
-    struts {
-        // left 64
-        // right 64
-        // top 64
-        // bottom 64
-    }
+
 }
 
 // Add lines like this to spawn processes at startup.
@@ -376,7 +377,7 @@ binds {
     Mod+R 	    hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
     Mod+Period      hotkey-overlay-title="Open Emoji Picker" { spawn "~/.config/commands/openemote.sh"; }
 
-    Mod+B           hotkey-overlay-title="Open Helium Browser" { spawn "~/.config/commands/openhelium.sh"; }
+    Mod+B           hotkey-overlay-title="Open LibreWolf" { spawn "~/.config/commands/openlibrewolf.sh"; }
     Mod+N           hotkey-overlay-title="Open Neovim" { spawn "~/.config/commands/openneovim.sh"; }
     Mod+Shift+N     hotkey-overlay-title="Open Vim" { spawn "~/.config/commands/openvim.sh"; }
     Mod+E           hotkey-overlay-title="Open Yazi" { spawn "~/.config/commands/openyazi.sh"; }
